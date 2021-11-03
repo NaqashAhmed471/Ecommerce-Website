@@ -1,0 +1,129 @@
+.Slider_wrapper {
+  padding-top: 50px;
+}
+
+.Slider_wrapper .slider1 {
+  background-image: url("../../images/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.Slider_wrapper .slider2 {
+  background-image: url("../../images/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.Slider_wrapper .slider3 {
+  background-image: url("../../images/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 20px;
+}
+
+.inner_slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+.inner_slider h5 {
+  background-color: #08546c;
+  padding: 6px 20px;
+  border-radius: 20px;
+  animation: slideFromLeft 5s ease-in-out 1;
+  color: #ffffff;
+}
+
+.inner_slider h3 {
+  background-color: green;
+  padding: 10px 30px;
+  color: #ffffff;
+  font-size: 28px;
+  border-radius: 2px;
+  animation: show 5s ease-in-out 1;
+}
+
+.inner_slider h1 {
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 52px;
+  animation: slideFromRight 5s ease-in-out 1;
+}
+
+.inner_slider h1 span {
+  font-weight: bold;
+  color: #d5243d;
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(1000px);
+  }
+  50% {
+    transform: translateX(-200px);
+  }
+  75% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-1000px);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  75% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes show {
+  0% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.btn_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn_flex h3:nth-child(2) {
+  background-color: transparent;
+  border: 1px solid #d5243d;
+  color: #d5243d;
+}
+
+.btn_flex h3:nth-child(2):hover {
+  background-color: #d5243d;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn_flex h3:nth-child(1):hover {
+  background-color: transparent;
+  color: #d5243d;
+  border: 1px solid #d5243d;
+  cursor: pointer;
+}
